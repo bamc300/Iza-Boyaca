@@ -10,9 +10,9 @@
 {% block title %}
   {# Create a useful, SEO-friendly title tag based on what we have #}
   {% if data.piece %}
-    {{ data.piece.title }} | OpenMuseum
+    {{ data.piece.title }} | Nido verde
   {% elseif data.page %}
-    {{ data.page.title }} | OpenMuseum
+    {{ data.page.title }} | Nido verde
   {% else %}
     {{ apos.log('Looks like you forgot to override the title block in a template that does not have access to an Apostrophe page or piece.') }}
   {% endif %}
