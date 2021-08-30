@@ -10,7 +10,7 @@
 {% block main %}
   {{ masthead.render(data.page) }}
   <form class="o-container o-container--narrow c-filters c-generic-filters">
-    {{ search.render('Events') }}
+    {{ search.render('Eventos') }}
     {{ tags.render(data.piecesFilters.tags) }}
     {{ submit.render() }}
   </form>
@@ -22,7 +22,7 @@
       </div>
     {% else %}
       <div class="o-body o-empty-state">
-        No Events match that criteria
+        No hay eventos para mostrar
       </div>
     {% endif %}
   </div>

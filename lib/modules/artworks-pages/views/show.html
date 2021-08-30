@@ -38,11 +38,11 @@
         {{ image.render(artistImage) }}
       </figure>
       <div class="c-meta-columns__right c-artwork-page__artist__description">
-        <h4 class="o-subheadline">About {{ artist.title }}</h4>
+        <h4 class="o-subheadline">Sobre el {{ artist.title }}</h4>
         <p class="o-body">
           {{ artist.description }}
         </p>
-        <a href="{{ artist._url }}" class="o-button">Learn More</a>
+        <a href="{{ artist._url }}" class="o-button">Saber mas</a>
         <button class="snipcart-add-item o-button"
         data-item-id="{{artist.title}}"
         data-item-price="{{artist.nationality}}"
@@ -50,7 +50,7 @@
         data-item-description="{{ artist.description }}"
         data-item-image="{{imgUrl}}"
         data-item-name="{{artist.title}}">
-  Add to cart
+  Agregar al carrito
 </button>
       </div>
     </div>

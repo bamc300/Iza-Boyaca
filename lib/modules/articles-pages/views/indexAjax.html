@@ -5,7 +5,7 @@
 {% import 'apostrophe-pager:macros.html' as pager %}
 
 <form class="o-container o-container--narrow c-filters c-generic-filters">
-  {{ search.render('Articles') }}
+  {{ search.render('Articulos') }}
   {{ tags.render(data.piecesFilters.tags) }}
   {{ submit.render() }}
 </form>
@@ -17,7 +17,7 @@
     </div>
   {% else %}
     <div class="o-body o-empty-state">
-      No Articles match that criteria
+      No hay articulos para mostrar
     </div>
   {% endif %}
 </div>

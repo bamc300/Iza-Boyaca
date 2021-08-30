@@ -12,9 +12,9 @@
 {% block main %}
   {{ masthead.render(data.page) }}
   <form class="o-container o-container--narrow c-filters c-generic-filters">
-    {{ search.render('Artwork') }}
-    {{ checkboxes.render('Object Type', 'objectType', data.piecesFilters.objectType) }}
-    {{ checkboxes.render('Location', 'location', data.piecesFilters.location) }}
+    {{ search.render('Productos') }}
+    {{ checkboxes.render('Tipo de producto', 'objectType', data.piecesFilters.objectType) }}
+    {{ checkboxes.render('Ubicación', 'location', data.piecesFilters.location) }}
     {{ submit.render() }}
   </form>
   <div class="o-container o-container--medium">
