@@ -1,65 +1,65 @@
-# Open Museum
+# Iza Boyaca
 
-See it in action with demo content at [http://demo.apostrophecms.org](http://demo.apostrophecms.org).
+.
 
 ## Introduction
 
-This project is meant to serve two main goals: The first being it is fully styled, responsive, generic website to use as a starting point for your own Apostrophe development. The second being a demonstration of a fully featured production-ready Apostrophe build: a host of widgets (both simple and complex), networks of related content (pieces), custom content taxonomy, importing pieces, maps, advanced Apostrophe configuration, etc. all while organizing code the way we, the ApostropheCMS maintainers, do in production.
+Este proyecto está destinado a cumplir dos objetivos principales: el primero es un sitio web genérico, receptivo y con un estilo completo para usar como punto de partida para su propio desarrollo de Apostrophe. El segundo es una demostración de una compilación de Apostrophe lista para producción con todas las funciones: una serie de widgets (simples y complejos), redes de contenido relacionado (piezas), taxonomía de contenido personalizado, importación de piezas, mapas, configuración avanzada de Apostrophe, etc. mientras organizamos el código de la forma en que nosotros, los mantenedores de ApostropheCMS, lo hacemos en producción.
 
-## Getting Started
+## Iniciando
 
-You need to [set up your environment](https://apostrophecms.org/docs/tutorials/getting-started/setting-up-your-environment.html) with the necessities to develop with Apostrophe.
+Necesita [configurar su entorno] (https://apostrophecms.org/docs/tutorials/getting-started/setting-up-your-environment.html) con las necesidades para desarrollar con Apostrophe.
 
-Then run:
+Correrlo:
 
 ```
-git clone https://github.com/apostrophecms/apostrophe-open-museum
+git clone https://github.com/bamc300/Iza-Boyaca.git
 cd apostrophe-open-museum
 npm install
 node app apostrophe-users:add admin admin
-[enter password when prompted]
+[eIngresar contraseña del administrador]
 node app
 ```
 
-You should now be able to access the site at: [http://localhost:3000](http://localhost:3000), and log in to start editing by visiting [/login](http://localhost:3000/login).
+Ahora debería poder acceder al sitio en: [http: // localhost: 3000] (http: // localhost: 3000) e iniciar sesión para comenzar a editar visitando [/ login] (http: // localhost: 3000 /acceso).
 
-See the [Apostrophe tutorials](https://apostrophecms.org/docs/tutorials/getting-started/index.html) for more information.
+Consulte los [tutoriales de Apostrophe] (https://apostrophecms.org/docs/tutorials/getting-started/index.html) para obtener más información.
 
-## Request for Feedback
+## Solicitud de comentarios
 
-We're currently looking for feedback on what would make this a more useful demo and a more friendly repository for those just getting started with Apostrophe.
+Actualmente estamos buscando comentarios sobre lo que haría que esta sea una demostración más útil y un repositorio más amigable para aquellos que recién comienzan con Apostrophe.
 
-Some things we're trying to achieve:
-- Maintainability and readability
-- Organization
-- Clear naming
-- Hitting a sweet spot between friendly-for-beginners and enlightening-for-intermediates.
+Algunas cosas que estamos tratando de lograr:
+- Mantenibilidad y legibilidad
+- organización
+- Nomenclatura clara
+- Alcanzando un punto ideal entre amigable para principiantes e instructivo para intermedios.
 
-Some things we're trying to avoid:
-- Excessive dev tooling that is not Apostrophe-specific
-- Inconsistent coding style
-- Practices we wouldn't follow in our own client projects
+Algunas cosas que intentamos evitar:
+- Herramientas de desarrollo excesivas que no son específicas de Apostrophe
+- Estilo de codificación inconsistente
+- Prácticas que no seguiríamos en los proyectos de nuestros propios clientes
 
-## Overview of Scope
+## Descripción general del alcance
 
-This demo site is designed to illustrate the basic needs of an art museum website. In addition to the concept of pages, it includes the following content types:
+Este sitio de demostración está diseñado para ilustrar las necesidades básicas del sitio web de un museo de arte. Además del concepto de páginas, incluye los siguientes tipos de contenido:
 
-- Artworks
-- Artists
-- Object Types ("Sculpture", "Painting", etc.)
-- Locations
-- Museum Staff Members
-- Articles (Blog)
-- Events
+- Tienda
+- Productos
+- Tipo de producto ("Postre", "Artesania", etc.)
+- Ubicaciones
+- Miembros del personal del municipio
+- Articulos (Blog)
+- Eventos
 
-The relationships between the content types look like this:
+Las relaciones entre los tipos de contenido se ven así:
 
 ```
 
                                +---------------+
                                |               |
                                |               |
-         +--------------------->    Artworks   |
+         +--------------------->    Tienda     |
          |                     |               |
          |                     |               |
          |                     +--+---------+--+
@@ -70,7 +70,7 @@ The relationships between the content types look like this:
 +----------------+   +---------------+   +--------------+    +--------------+
 |                |   |               |   |              |    |              |
 |                |   |               |   |              |    |              |
-|  Object Type   |   |   Locations   |   |   Artists    |    |   Articles   |
+|Tipo de producto|   |   Ubicaciones |   |   Producto   |    |     Blog     |
 |                |   |               |   |              |    |              |
 |                |   |               |   |              |    |              |
 +----------------+   +---------------+   +--------------+    +--------------+
@@ -80,65 +80,64 @@ The relationships between the content types look like this:
                      +-----------+---+   +----------------+
                      |               |   |                |
                      |               |   |                |
-                     |    Events     |   |  Staff Members |
+                     |    Eventos    |   |   Miembros     |
                      |               |   |                |
                      |               |   |                |
                      +---------------+   +----------------+
 
 ```
 
-These relationships are represented with Apostrophe [joins](https://apostrophecms.org/docs/tutorials/getting-started/schema-guide.html#code-join-by-array-code) between piece types.
+Estas relaciones se representan con Apostrophe [uniones] (https://apostrophecms.org/docs/tutorials/getting-started/schema-guide.html#code-join-by-array-code) entre tipos de piezas.
 
-Along with pre-configured piece types, this projecgt also includes a variety of widgets you can use to illustrate your content on pages. These range from various ways to display images, to features and marquees, to excerpts of existing pieces, to layout widgets that let you nest widgets inside other widgets!
+Junto con los tipos de piezas preconfigurados, este proyecto también incluye una variedad de widgets que puede usar para ilustrar su contenido en las páginas. Estos van desde varias formas de mostrar imágenes, hasta características y marquesinas, extractos de piezas existentes y widgets de diseño que le permiten anidar widgets dentro de otros widgets.
 
-## Technical Details
+## Detalles técnicos
 
-### Front-end assets
-All source CSS is written in LESS, which is the CSS prepocessor bundled with Apostrophe. All source CSS resides in `/lib/modules/apostrophe-assets/public/css` and is organized according the [ITCSS method](https://www.xfive.co/blog/itcss-scalable-maintainable-css-architecture/). Note that you can also use Webpack and SASS in your own project, as long as you generate a CSS file as output and push that to Apostrophe as an asset.
+### Activos de front-end
+Todo el CSS de origen está escrito en LESS, que es el preprocesador de CSS incluido con Apostrophe. Todo el CSS de origen reside en `/ lib / modules / apostrophe-assets / public / css` y está organizado de acuerdo con el [método ITCSS] (https://www.xfive.co/blog/itcss-scalable-maintainable-css-architecture /). Tenga en cuenta que también puede usar Webpack y SASS en su propio proyecto, siempre que genere un archivo CSS como salida y lo envíe a Apostrophe como un activo.
 
-#### Exceptions
-`apostrophe-widgets` modules that require front-end JS to run every time the module gets 'ready' (loads for the first time, changes) have a 'player' that Apostrophe expects to find in the module's `/public/js/always.js` file by default. The slideshow widget is a good example of this  `/lib/modules/slideshow-widgets`. For more on this pattern see [adding a JavaScript widget player on the browser side](https://apostrophecms.org/docs/tutorials/getting-started/custom-widgets.html#adding-a-java-script-widget-player-on-the-browser-side)
+#### Excepciones
+Los módulos `apostrophe-widgets` que requieren que JS front-end se ejecute cada vez que el módulo se 'prepara' (se carga por primera vez, cambia) tienen un 'reproductor' que Apostrophe espera encontrar en el módulo` / public / js / always.js` archivo por defecto. El widget de presentación de diapositivas es un buen ejemplo de esto `/ lib / modules / slideshow-widgets`. Para obtener más información sobre este patrón, consulte [agregar un reproductor de widgets de JavaScript en el lado del navegador] (https://apostrophecms.org/docs/tutorials/getting-started/custom-widgets.html#adding-a-java-script-widget- jugador en el lado del navegador)
 
-### MapQuest API + locations piece type
-This site has built-in map widgets and geocoding functionality for its `locations` piece type. It runs both of these operations through MapQuest's free API. [You can register a key and secret here](https://developer.mapquest.com/plan_purchase/steps/business_edition/business_edition_free/register).
+### API de MapQuest + tipo de pieza de ubicaciones
+Este sitio tiene widgets de mapas incorporados y funcionalidad de codificación geográfica para su tipo de pieza de "ubicaciones". Ejecuta ambas operaciones a través de la API gratuita de MapQuest. [Puede registrar una clave y un secreto aquí] (https://developer.mapquest.com/plan_purchase/steps/business_edition/business_edition_free/register).
 
-> You do not have to enter a "callback URL" when signing up and generating your API key. Just leave that field blank.
+> No es necesario que ingrese una "URL de devolución de llamada" al registrarse y generar su clave API. Deja ese campo en blanco.
 
-#### MapQuest configuration
-This site expects the MapQuest key and secret to be a part of the `options` object for the `locations` piece type. This repo does not come bundled with a key and secret and so you will see both server and client console warnings when doing things that require them.
+#### Configuración de MapQuest
+Este sitio espera que la clave y el secreto de MapQuest formen parte del objeto `options` para el tipo de pieza` locations`. Este repositorio no viene con una clave y un secreto, por lo que verá advertencias de la consola del cliente y del servidor cuando haga cosas que las requieran.
 
-You can add your key and secret like this:
+Puede agregar su clave y secreto de esta manera:
 
-In `/app.js`
+En `/ app.js`
 
-```
+''
 
-const apos = require('apostrophe')({
+const apos = require ('apóstrofo') ({
   shortName: 'apostrophe-open-museum',
-  modules: {
-    // ... other module configurations
-    'locations': {
+  módulos: {
+    // ... otras configuraciones de módulo
+    'ubicaciones': {
       'mapQuest': {
-        key: 'xxxxxxxx',
-        secret: 'yyyyyyy'
+        clave: 'xxxxxxxx',
+        secreto: 'yyyyyyy'
       }
     }
   };
-```
+''
 
-You can also place configuration like this in the module's own index.js file, i.e. `lib/modules/locations/index.js`
+También puede colocar una configuración como esta en el propio archivo index.js del módulo, es decir, `lib / modules / ubicaciones / index.js`
 
-**You should not put API credentials in public repositories.** [This guide illustrates creating environment-specific module settings](https://apostrophecms.org/docs/tutorials/getting-started/settings.html#changing-the-value-for-a-specific-server-only) without adding them to your repository.
+** No debe poner las credenciales de API en repositorios públicos. ** [Esta guía ilustra la creación de configuraciones de módulo específicas del entorno] (https://apostrophecms.org/docs/tutorials/getting-started/settings.html#changing-the- value-for-a-specific-server-only) sin agregarlos a su repositorio.
 
-### Using piece types as taxonomy
+### Uso de tipos de piezas como taxonomía
 
-In most use cases of `apostrophe-pieces` the developer wants to be able to leverage the on-screen visualization of that content. For instance, when you have a blog, you expect there to be pages that represent blog posts and widgets that display excerpts of those posts. You would also expect a "blog page" that displays all of the posts, with the ability to use paginatio or infinite scroll to reach older content.
+En la mayoría de los casos de uso de "piezas de apóstrofe", el desarrollador desea poder aprovechar la visualización en pantalla de ese contenido. Por ejemplo, cuando tiene un blog, espera que haya páginas que representen publicaciones de blog y widgets que muestren extractos de esas publicaciones. También esperaría una "página de blog" que muestre todas las publicaciones, con la capacidad de usar paginatio o desplazamiento infinito para llegar al contenido más antiguo.
 
-But pieces have other applications. You can also use "meta pieces" to create a taxonomy for visualized pieces. In this demo, the piece type `categories-object-types` is a "meta piece" that is not represented on-screen but is instead joined to `artworks` to help categorize them.
+Pero las piezas tienen otras aplicaciones. También puede utilizar "metapiezas" para crear una taxonomía de las piezas visualizadas. En esta demostración, el tipo de pieza `categorías-tipos de objetos` es una" meta pieza "que no se representa en la pantalla, sino que se une a las` obras de arte` para ayudar a categorizarlas.
 
-The benefit of doing this type of categorization as a piece instead of as a tag is that the pool of categories does not get polluted by the global tag landscape, and only those with permission to edit the categories can change the list of possibilities. You also get the familiar manager interface for managing your meta pieces.
+El beneficio de hacer este tipo de categorización como una pieza en lugar de una etiqueta es que el conjunto de categorías no se contamina por el panorama global de etiquetas, y solo aquellos con permiso para editar las categorías pueden cambiar la lista de posibilidades. También obtiene la interfaz de administrador familiar para administrar sus meta piezas.
 
-[As with tags, you get built-in filtering of your joins with some added configuration](https://apostrophecms.org/docs/tutorials/intermediate/cursors.html#filtering-joins-browsing-profiles-by-market).
+[Al igual que con las etiquetas, obtienes un filtrado integrado de tus combinaciones con alguna configuración adicional] (https://apostrophecms.org/docs/tutorials/intermediate/cursors.html#filtering-joins-browsing-profiles-by-market) .
 
-A full example of this is illustrated in the schema of `artworks` `/lib/modules/artworks/index.js`
-
+Un ejemplo completo de esto se ilustra en el esquema de `artwork` / lib / modules / artwork / index.js`
