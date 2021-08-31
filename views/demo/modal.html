@@ -3,17 +3,17 @@
 {% macro render() %}
 <div class="c-demo-modal" data-demo-modal>
   <div class="c-demo-modal__content" data-demo-modal-content>
-    <h3 class="o-headline c-demo-modal__headline">Welcome to the ApostropheCMS Demo!</h3>
+    <h3 class="o-headline c-demo-modal__headline">Bienvenido a ApostropheCMS Demo!</h3>
     <ul class="o-body c-demo-modal__list">
-      <li><strong>Note</strong>: Editing experience is intended for desktop users</li>
-      <li>Use the mouse to find and interact with editable content.</li>
-      <li>Use the <span class="c-demo-modal__pointer-link" data-demo-modal-pointer-link="pageMenu">Page Menu</span> in the lower left corner to create new pages.</li>
-      <li>Use the <span class="c-demo-modal__pointer-link" data-demo-modal-pointer-link="adminBar">Admin Bar</span> up top to edit global content.</li>
+      <li><strong>Nota</strong>:La experiencia de edición está destinada a usuarios de escritorio</li>
+      <li>Utilice el mouse para buscar e interactuar con contenido editable.</li>
+      <li>Use el <span class="c-demo-modal__pointer-link" data-demo-modal-pointer-link="pageMenu">Menu de paginas</span> en la esquina inferior izquierda para crear nuevas páginas.</li>
+      <li>Use el <span class="c-demo-modal__pointer-link" data-demo-modal-pointer-link="adminBar">Barra de administrador</span> arriba para editar contenido global.</li>
       <li>Add Content by using the <strong>Plus</strong> buttons (Shown below).</li>
     </ul>
     {# js will toggle this visible if needed, otherwise don't load it #}
     <img data-demo-modal-gif class="c-demo-modal__gif" src="/images/apos-addcontent.gif" alt="Adding content to ApostropheCMS" />
-    <button class="c-demo-modal__close-button" data-demo-modal-close>Got it! Let's use Apostrophe!</button>
+    <button class="c-demo-modal__close-button" data-demo-modal-close>¡Entiendo! ¡Usemos Apostrophe!</button>
   </div>
   <div class="c-demo-modal__pointer-container c-demo-modal__pointer-container--admin-bar" data-demo-modal-pointer="adminBar">
     {{ svgs.arrowUp() }}
