@@ -1,7 +1,7 @@
 const path = require('path');
 
 const apos = require('apostrophe')({
-  shortName: 'Iza-Boyaca',
+  shortName: 'iza-boyaca-db',
 
   // See lib/modules for basic project-level configuration of our modules
   // responsible for serving static assets, managing page templates and
@@ -102,7 +102,13 @@ const apos = require('apostrophe')({
     'random-met-artwork-widgets': { extend: 'apostrophe-widgets' },
 
     // Layout Widgets
-    'columns-widgets': { extend: 'apostrophe-widgets' }
+    'columns-widgets': { extend: 'apostrophe-widgets' },
+    //Base de datos
+    //27017
+    'apostrophe-db': {
+      uri: 'mongodb://' + process.env.MONGODB_PORT_27017_TCP_ADDR + ':' + process.env.MONGODB_PORT_27017_TCP_PORT + '/iza-boyaca-db'
+    }
+
 
   }
 });
