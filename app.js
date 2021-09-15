@@ -105,9 +105,9 @@ const apos = require('apostrophe')({
     'columns-widgets': { extend: 'apostrophe-widgets' },
     //Base de datos
     //27017
-    'apostrophe-db': {
-      uri: 'mongodb://' + process.env.MONGODB_PORT_27017_TCP_ADDR + ':' + process.env.MONGODB_PORT_27017_TCP_PORT + '/iza-boyaca-db'
-    }
+    //'apostrophe-db': {
+    //  uri: 'mongodb://' + process.env.MONGODB_PORT_27017_TCP_ADDR + ':' + process.env.MONGODB_PORT_27017_TCP_PORT + '/iza-boyaca-db'
+    //}
 
 
   }
