@@ -1,5 +1,5 @@
 # Intall dependencies and copy application
-FROM node:carbon as builder
+FROM node:14.17.6 as builder
 
 # Install dependencies only
 # Will only run npm install when dependencies changes
@@ -10,7 +10,7 @@ RUN cd /app/ && npm install
 COPY . /app/
 
 # Build final cointainer
-FROM node:carbon
+FROM node:14.17.6
 
 # Copy app from previous stage
 COPY --from=builder /app /app
